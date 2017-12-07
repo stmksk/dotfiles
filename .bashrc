@@ -116,5 +116,4 @@ if ! shopt -oq posix; then
   fi
 fi
 PS1='\[\e[1;32m\]\u:\[\033[01;31m\]$(if git status &>/dev/null;then echo [$(git describe --contains --all HEAD | cut -d" "  -f2-)];fi)\[\033[00m\]\[\e[1;36m\]\w\[\e[m\]$ '
-
-export PATH="~/jython2.7.0/bin:$PATH"
+#export PATH="$HOME/.cargo/bin:$PATH
